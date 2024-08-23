@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-M-H</title>
+    <link rel="icon" href="Logo.jpg" type="image/x-icon">
+
+    <style>
+        /* Box-sizing reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Color de fondo claro */
+            color: #333;
+        }
+
+        header {
+            background-color: #0e0f0f; /* Negro */
+            color: #ffffff; /* Blanco */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #003366; /* Azul oscuro */
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff; /* Blanco */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #b3c6ff; /* Azul claro */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #ffffff; /* Blanco */
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #003366; /* Azul oscuro */
+            font-size: 2em;
+        }
+
+        .rooms, .services, .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .room, .service, .gallery-item {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .room:hover, .service:hover, .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service:active, .room:active {
+            box-shadow: 0 0 15px rgba(0, 51, 102, 0.8); /* Sombreado azul al hacer clic */
+        }
+
+        footer {
+            background-color: #000000; /* Negro */
+            color: #ffffff; /* Blanco */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-options {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact-options p {
+            font-size: 1.2em;
+            color: #003366; /* Azul oscuro */
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button img {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .button.facebook {
+            background-color: #003366; /* Azul oscuro */
+        }
+
+        .button.facebook:hover {
+            background-color: #002244; /* Azul más oscuro */
+        }
+
+        .button.whatsapp {
+            background-color: #0073e6; /* Azul brillante */
+        }
+
+        .button.whatsapp:hover {
+            background-color: #005bb5; /* Azul más oscuro */
+        }
+
+        .button.call {
+            background-color: #000000; /* Negro */
+        }
+
+        .button.call:hover {
+            background-color: #333333; /* Negro más oscuro */
+        }
+
+        .button.instagram {
+            background-color: #003366; /* Azul oscuro */
+        }
+
+        .button.instagram:hover {
+            background-color: #002244; /* Azul más oscuro */
+        }
+
+        @media (max-width: 768px) {
+            .rooms, .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .room, .service, .gallery-item {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+    <script>
+        function redirectToPage(page) {
+            if (page === 'RP') {
+                window.location.href = 'RP.html';
+            } else if (page === 'hotel') {
+                window.location.href = 'Hotel.html';
+            } else if (page === 'tienda') {
+                window.location.href = 'Tienda.html';
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <p class="modern-text">"FIVE MORE HOURS"</p>
+    </header>
+    
+    <style>
+        .modern-text {
+            font-size: 36px; /* Aumenta el tamaño de la fuente */
+            font-family: 'Garamond', sans-serif; /* Utiliza una tipografía moderna */
+            font-weight: bold; /* Opción para hacer el texto más grueso si es necesario */
+        }
+    </style>
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <style>
+        body{
+            background-color: #333333;
+        }
+    </style>
+
+    <nav>
+        <a href="#RP">RP Y FISTAS</a>
+        <a href="#FIESTAS"> FIESTAS</a>
+        <a href="#ORGANIZADORES">ORGANIZADORES</a>
+        <a href="#INSTAGRAM">REDES</a>
+        <a href="#UBICACION">UBICACION SIGUIENTE FISTA</a>
+    </nav>
+
+    <div class="container">
+        <section id="RP" class="section">
+            <h2>RP Y FISTAS</h2>
+            <div class="services">
+                <div class="room" onclick="redirectToPage('RP')">
+                    <h3>RP</h3>
+                    <p>Conoce nuestros RP de confianza</p>
+                </div>
+                <div class="room">
+                    <h3>FIESTAS</h3>
+                    <p>conoce nuestras fiestas anteriores </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="section">
+            <h2>Habitaciones</h2>
+            <div class="rooms">
+                <div class="room" onclick="redirectToPage('motel')">
+                    <h3>Motel</h3>
+                    <p>Espacio cómodo para dos personas con todas las comodidades necesarias.</p>
+                </div>
+                <div class="room" onclick="redirectToPage('hotel')">
+                    <h3>Hotel</h3>
+                    <p>Perfecto para descansar y cuenta con todas las comodidades necesarias para sentirte como en casa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Galería</h2>
+            <div class="gallery-container" style="overflow-x: auto; white-space: nowrap; padding: 0; -webkit-overflow-scrolling: touch;">
+                <div class="gallery" style="display: inline-flex; flex-wrap: nowrap;">
+                    <div class="gallery-item" style="display: inline-block; margin-right: 10px; flex: 0 0 auto;">
+                        <img src="habi_Hotel/torre.jpg" alt="Galería 1" style="max-width: 100%; height: auto; display: block; border-radius: 8px;">
+                    </div>
+                    <div class="gallery-item" style="display: inline-block; margin-right: 10px; flex: 0 0 auto;">
+                        <img src="habi_Hotel/Decoracion.jpg" alt="Galería 2" style="max-width: 100%; height: auto; display: block; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubi" class="section">
+            <h2>Ubicación</h2>
+            <p>Encuéntranos en la siguiente dirección:</p>
+            <p><strong>Av. Vicente Guerrero 5, Centro, 1ra Demarcación Poniente, 42700 Mixquiahuala, Hgo.</strong></p>
+
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <a href="https://www.google.com.mx/maps/place/HOTEL+PARIS/@20.2306137,-99.2205897,17z/data=!3m1!4b1!4m9!3m8!1s0x85d3d7bf415bda35:0x5522826f541087a2!5m2!4m1!1i2!8m2!3d20.2306137!4d-99.2180148!16s%2Fg%2F11r97nx97r?entry=ttu" target="_blank">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipMCL0UKXSHFXk0htBivi2TqP7Gc2bT2WXT7fEZo=w408-h544-k-no" alt="Google Maps" style="max-width: 100%; height: auto; display: block; border-radius: 10px; max-height: 400px;">
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 10px;">
+                <a href="https://www.google.com.mx/maps/place/HOTEL+PARIS/@20.2306137,-99.2205897,17z/data=!3m1!4b1!4m9!3m8!1s0x85d3d7bf415bda35:0x5522826f541087a2!5m2!4m1!1i2!8m2!3d20.2306137!4d-99.2180148!16s%2Fg%2F11r97nx97r?entry=ttu" class="button location" target="_blank" style="background-color: #000000; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px;">
+                    Ver en Google Maps
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>Selecciona una de las siguientes opciones para contactarnos o seguirnos:</p>
+
+            <a href="https://www.facebook.com/HOTELPARISMIX" target="_blank" class="button facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+                Visitar Página de Facebook
+            </a>
+
+            <a href="https://wa.me/5561959967?text=Hola,%20quiero%20más%20información%20sobre%20las%20habitaciones%20y%20los%20precios%20del%20Hotel%20Paris." target="_blank" class="button whatsapp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+                Hotel Paris en WhatsApp
+            </a>
+
+            <a href="https://www.instagram.com/hotel.paris_?igsh=MXRjN2JsNzlibm1xeQ==" target="_blank" class="button instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                Visitar Instagram
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
