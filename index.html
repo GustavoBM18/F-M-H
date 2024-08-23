@@ -176,8 +176,8 @@
         function redirectToPage(page) {
             if (page === 'RP') {
                 window.location.href = 'RP.html';
-            } else if (page === 'hotel') {
-                window.location.href = 'Hotel.html';
+            } else if (page === 'Social') {
+                window.location.href = 'redes.html';
             } else if (page === 'tienda') {
                 window.location.href = 'Tienda.html';
             }
@@ -197,7 +197,6 @@
             font-weight: bold; /* Opción para hacer el texto más grueso si es necesario */
         }
     </style>
-    <script defer src="https://app.embed.im/snow.js"></script>
     <style>
         body{
             background-color: #333333;
@@ -205,8 +204,8 @@
     </style>
 
     <nav>
-        <a href="#RP">RP Y FISTAS</a>
-        <a href="#FIESTAS"> FIESTAS</a>
+        <a href="#RP">FISTAS</a>
+        <a href="#Social"> REDES</a>
         <a href="#ORGANIZADORES">ORGANIZADORES</a>
         <a href="#INSTAGRAM">REDES</a>
         <a href="#UBICACION">UBICACION SIGUIENTE FISTA</a>
@@ -221,6 +220,7 @@
                     <p>Conoce nuestros RP de confianza</p>
                 </div>
                 <div class="room">
+                <div class="room" onclick="redirectToPage('Social')"></div>
                     <h3>FIESTAS</h3>
                     <p>conoce nuestras fiestas anteriores </p>
                 </div>
